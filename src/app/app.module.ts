@@ -11,6 +11,7 @@ import { UsersAddComponent } from './page/users-add/users-add.component';
 import { FormsModule } from '@angular/forms';
 import { FilterPipe } from './pipe/filter.pipe';
 import { SorterPipe } from './pipe/sorter.pipe';
+import { AboutUsComponent } from './page/about-us/about-us.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -20,7 +21,8 @@ import { SorterPipe } from './pipe/sorter.pipe';
     UsersEditComponent,
     UsersAddComponent,
     FilterPipe,
-    SorterPipe
+    SorterPipe,
+    AboutUsComponent
   ],
   imports: [
     BrowserModule,
