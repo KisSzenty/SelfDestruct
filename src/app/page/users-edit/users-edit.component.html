@@ -1,0 +1,40 @@
+<div class="container-fluid">
+       <div class="row">
+              <div class="col-12">
+                     <h1>A {{newUser.name}} szerkesztés</h1>
+                     <div>&nbsp;</div>
+                     <div class="form-group">
+                            <label for="firstname">Keresztnév</label>
+                            <input class="form-control"
+                                   id="firstname"
+                                   name="firstname"
+                                   type="text"
+                                   [(ngModel)]="newUser.name.first">
+                            <br>
+                            <label for="lastname">Vezetéknév</label>
+                            <input class="form-control"
+                                   id="lastname"
+                                   name="lastname"
+                                   type="text"
+                                   [(ngModel)]="newUser.name.last">
+                            <br>
+                            <label for="age">Kor</label>
+                            <input class="form-control"
+                                   id="age"
+                                   name="age"
+                                   type="text"
+                                   [(ngModel)]="newUser.age">
+                            <br>
+                            <label for="email">E-mail</label>
+                            <input class="form-control"
+                                   id="email"
+                                   name="email"
+                                   type="text"
+                                   [(ngModel)]="newUser.email">
+                     </div>
+                     <button class="btn btn-info"
+                             (click)="onUpdate()">Mentés</button>
+
+              </div>
+       </div>
+</div>
